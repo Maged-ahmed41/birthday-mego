@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 900px;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            overflow: hidden;
+            position: relative;
+        }
+        .text-content {
+            flex: 1;
+            padding-right: 30px;
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .highlight {
+            color: #ff6347;
+            font-weight: bold;
+        }
+        .contact-info {
+            margin-top: 30px;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 18px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            img {
+                position: relative;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-content">
+            <br>
+            <br>
+            <h1>About Me</h1>
+            <p> 
+            <br>
+           <br>
+            <p>Hi, I'm <span class="highlight">Maged</span>, an engineer from Egypt. I have a deep passion for technology and love working on <span class="highlight">electronics projects</span>, especially those involving Arduino. I'm also really fascinated by <span class="highlight">Artificial Intelligence (AI)</span> and <span class="highlight">Machine Learning</span>, and I’m always eager to learn more about these fields.</p>
+            <p> </p>
+            <p>I enjoy solving problems and pushing myself to take on new and exciting projects. My goal is to constantly improve my skills and grow both professionally and personally.</p>
+            <div class="contact-info">
+                <p>If you want to get in touch or know more, feel free to <a href="contact.html">contact me</a>!</p>
+            </div>
+        </div>
+        <img src="maged.jpg" alt="Maged's Photo">
+    </div>
+</body>
+</html>
